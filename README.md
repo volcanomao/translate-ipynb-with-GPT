@@ -14,4 +14,5 @@ This script efficiently translates Markdown cells in a Jupyter Notebook from Eng
 2. 在 `client` 中设置 OpenAI API 密钥。
 3. 输入待翻译的 `.ipynb` 文件路径。
 4. 脚本将创建一个翻译后的副本，文件名后加 "_CN.ipynb"。
-5. 使用 `python3 translate_GPT_async.py` 运行脚本，利用 asyncio 进行并行翻译。
+5. 使用 `python3 translate_GPT_async.py dir_path` 运行脚本，利用 asyncio 进行并行翻译。
+6. conda activate translate-env
