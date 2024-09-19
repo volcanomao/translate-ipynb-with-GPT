@@ -22,7 +22,8 @@ async def translate_text(text):
             messages=[
                 {"role": "user", "content": f"将以下英文文本翻译成中文：{text}"}
             ],
-            model="gpt-3.5-turbo",
+            #model="gpt-3.5-turbo",
+            model="gpt-4o-mini",
         )
         return chat_completion.choices[0].message.content
     except Exception as e:
